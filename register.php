@@ -10,8 +10,8 @@
 
                 $sql= "INSERT INTO users (username,email,password) VALUES ('$username','$email','$hashedPassword')";
                 if($connection->query($sql) == TRUE){
-                    echo 'Registration successful';
-                    header("Refresh:1; url=login.php");
+                    echo"<div class='alert alert-success'>New record created successfully</div>";
+                    header("Refresh: 1; URL=login.php");
                     exit();
                 }
                 else{
