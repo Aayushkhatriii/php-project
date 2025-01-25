@@ -10,6 +10,7 @@
 
                 $sql= "INSERT INTO employee (Name,Address,Gender,Department) 
                 VALUES ('$name','$address','$gender','$department')";
+                
                 if($connection->query($sql) == TRUE){
                     echo"<div class='alert alert-success'>New record created successfully</div>";
                     header("Refresh: 1; URL=login.php");

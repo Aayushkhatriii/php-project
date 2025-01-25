@@ -10,5 +10,6 @@
     }
     else{
         echo 'Connection established successfully';
+        echo '<br> <br>';
     }
 ?>
